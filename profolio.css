@@ -1,0 +1,276 @@
+html{
+    scroll-behavior: smooth; 
+}
+
+.footer{
+    background-image: linear-gradient(to bottom, #edededcb 0%, #cbedf1b3 100%),url('images/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg');
+
+    height: auto;
+    width: 100vw;
+}
+.footer h1:nth-child(2){
+    color: darkblue;
+    font-family:cursive;
+    font-size: 36px;    
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align:left ;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    
+
+}
+
+
+.footer img{
+    border-radius: 50%;
+    display: flex;
+    justify-self:center;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    animation-name: myrotation;
+  animation-duration: 0.4s;   
+
+}
+.footer h1:nth-child(4){
+    color: darkgreen;
+    font-family:cursive;
+    font-size: 36px;    
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align:right ;
+    animation-name: myAnimation;
+    animation-duration: 6s;
+    padding: 100px;
+
+}
+
+@keyframes myAnimation {
+    0% {font-size: 20px;}
+    50% {font-size: 30px;}
+    100% {font-size: 36px;}
+}
+
+/* @keyframes myrotation{
+    0% {transform: rotate(0deg); opacity: 0;}
+    50% {transform: rotate(180deg);opacity: 0.5;}
+    100% {transform: rotate(360deg);opacity: 1;}
+} */
+@keyframes myrotation{
+    0% {transform: scale(0.25); opacity: 0;}
+    50% {transform: scale(0.5);opacity: 0.5;}
+    75% {transform: scale(0.75);opacity: 0.75;}
+    100% {transform: scale(1);opacity: 1;}
+}
+@keyframes myrotation2{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-90deg);}
+    100% {transform: rotate(0);}
+}
+
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+    width: 50%;
+    justify-self: center;
+    border-radius: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none; 
+     
+ }
+
+#home, #services ,#project,#contact{
+    background-image: linear-gradient(to bottom, #edededcb 0%, #e6f0f1b3 100%), url('images/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg');
+    width: 100%;
+    min-height: 100vh; 
+    position: relative;  
+    z-index: 0;          
+    display: block;
+    padding: 20px 20px; 
+    box-sizing: border-box;
+}
+#home .small_container{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    opacity: 2;
+    margin: 0 auto;
+}
+#home .content{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.content .content-main{
+    background-color: rgba(255, 255, 255, 0.586);
+    margin: 10px;
+    width: 700px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
+    
+}    
+.content-main p{
+    text-indent: 20%;
+}
+
+.skill h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;;
+    width: 30%;
+    background-color: #33333396;
+    border-radius: 10px;
+    margin:10px;
+    margin-bottom: 0px;
+}
+.skill p{
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(251, 251, 251, 0.569);
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    justify-self: center;
+    padding-left: 30px;
+    line-height: 2;
+    margin-bottom: 20px;
+
+}
+
+.content img{
+    border-radius: 20px;
+    width: 300px;
+    z-index: 1;
+    margin: 30px;
+    animation-name: myrotation2;
+    animation-duration: 6s;
+
+    
+}
+#services{
+    display: block;
+    width: 100vw;
+    height:auto;
+}
+.services-offering{
+    display: flex;
+    
+    gap:20px;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    overflow: scroll;
+    scrollbar-color: #cbedf1b3 yellow;
+    
+}
+.first-content{
+    min-width: 400px;
+    min-height: 300px;
+    height: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+    
+}
+.first-content h3{
+    text-align: center;
+    width: 100%;
+    
+
+}
+.first-content li{
+    line-height: 1.5;
+    width: 100%;
+}
+
+.project-container{
+    display: flex;
+    gap:30px;
+    overflow: scroll;
+
+}
+
+.project-card{
+    background-color: #cbedf177;
+    border-radius: 20px;
+    padding: 30px;
+    min-width: 500px;
+    min-height:300px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    overflow: scroll;
+}
+.project-card a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+.project-card a:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.contact-info{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    line-height: 2;
+    border-radius: 10px;
+    
+
+}
+.contact-info ul{
+    list-style: none;
+    text-align: left;
+    
+
+
+}
+
+.contact-info .social-link a{
+    background-color:black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    text-transform:capitalize;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.contact-info .social-link a:hover{
+    background-color:rgba(0, 0, 0, 0.625);
+    color: rgba(255, 255, 255, 0.627);
+}
+
