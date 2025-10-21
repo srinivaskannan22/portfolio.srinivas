@@ -73,6 +73,7 @@ html{
     background-color: #333;
     padding: 10px 0;
     width: 50%;
+    min-width: 400px;
     justify-self: center;
     border-radius: 10px;
 }
@@ -160,9 +161,7 @@ html{
     z-index: 1;
     margin: 30px;
     animation-name: myrotation2;
-    animation-duration: 6s;
-
-    
+    animation-duration: 6s;    
 }
 #services{
     display: block;
@@ -273,4 +272,10 @@ html{
     background-color:rgba(0, 0, 0, 0.625);
     color: rgba(255, 255, 255, 0.627);
 }
+@media screen and (max-width: 600px){
 
+#home img{
+   display: none;
+}
+
+}
